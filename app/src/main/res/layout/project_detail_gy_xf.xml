@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/stroke_white_soild"
+    >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="俞敏洪、王石、王健林、任志强、陈启宏"
+            android:singleLine="true"
+            android:padding="@dimen/dp_5"
+            android:textSize="20sp"
+            android:id="@+id/gy_xf_title" />
+        <View
+            android:background="@color/line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_height="1dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="俞敏洪、王石、王健林、任志强、陈启,这些商界巨子如何用财富改变社会、改变中国？他们怎么看历史？怎么看中国的未来？"
+            android:id="@+id/gy_xf_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_gravity="left" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0.00万"
+                    android:textSize="20sp"
+                    android:textColor="@color/liangyellow"
+                    android:id="@+id/gy_xf_target" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目标额"
+                     />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:background="@color/line"
+                android:layout_height="match_parent"></View>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0元"
+                    android:textSize="20sp"
+                    android:textColor="@color/liangyellow"
+                    android:id="@+id/gy_xf_current_money" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已筹金额"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:background="@color/line"
+                android:layout_height="match_parent"></View>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0天"
+                    android:textSize="20sp"
+                    android:textColor="@color/liangyellow"
+                    android:id="@+id/gy_xf_time" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余天数"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属分类：艺术"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:id="@+id/gy_xf_fenlei" />
+
+
+
+
+</LinearLayout>

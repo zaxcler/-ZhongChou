@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <include layout="@layout/commontitle"/>
+    
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:text="姓名/企业名"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/blacktext"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:hint="必填"
+            android:background="@color/white"
+            android:textColor="@color/borotext"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightlightboro" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="证件号"
+            android:textColor="@color/blacktext"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/card_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:hint="必填"
+            android:background="@color/white"
+            android:textColor="@color/blacktext"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/uploadphoto"
+            android:background="@drawable/textview_click_deepred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="@dimen/dp_5"
+            android:text="上传图片" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="（个人身份证正、反面/企业营业执照）" />
+    </LinearLayout>
+    <GridView
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:id="@+id/photo_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </GridView>
+   
+     <Button
+         android:id="@+id/submit"
+         android:padding="@dimen/dp_10"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="提交"
+         android:textColor="@color/white"
+         android:layout_marginLeft="@dimen/dp_30"
+         android:layout_marginRight="@dimen/dp_30"
+         android:layout_marginTop="@dimen/dp_40"
+         android:layout_marginBottom="@dimen/dp_10"
+         android:background="@drawable/button_click_liangyellow"/>
+
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cpb="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/stroke_white_soild"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="0.9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="俞敏洪、王石、王健林、任志强、陈启宏"
+            android:singleLine="true"
+            android:padding="@dimen/dp_5"
+            android:textSize="20sp"
+            android:id="@+id/gq_title" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:layout_weight="0.1"
+            android:textColor="@color/white"
+            android:background="@drawable/corners_midyellow_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态"
+            android:id="@+id/dongtai" />
+
+    </LinearLayout>
+
+        <View
+            android:background="@color/line"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_height="1dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="俞敏洪、王石、王健林、任志强、陈启,这些商界巨子如何用财富改变社会、改变中国？他们怎么看历史？怎么看中国的未来？"
+            android:id="@+id/gq_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_gravity="left" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_gravity="right">
+        <TextView
+            android:id="@+id/gq_province"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:background="@color/lightboro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="江苏"/>
+        <TextView
+            android:id="@+id/gq_city"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5"
+            android:background="@color/lightboro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="南京"/>
+
+
+    </LinearLayout>
+    <View
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_height="1dp"/>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0.00万"
+                    android:textSize="20sp"
+                    android:textColor="@color/liangyellow"
+                    android:id="@+id/gq_target" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目标额"
+                     />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:background="@color/line"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"></View>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0元"
+                    android:textSize="20sp"
+                    android:textColor="@color/liangyellow"
+                    android:id="@+id/gq_current_money" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已筹金额"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:background="@color/line"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"></View>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0天"
+                    android:textSize="20sp"
+                    android:textColor="@color/liangyellow"
+                    android:id="@+id/gq_time" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余天数"
+                    />
+            </LinearLayout>
+
+            </LinearLayout>
+                <View
+                    android:id="@+id/dashed_line"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/dashed_line"></View>
+                </LinearLayout>
+            <com.lianhai.zhongchou.customview.CircleProgressbar
+                android:id="@+id/progressbar"
+                cpb:circleColor="@color/lightboro"
+                cpb:circleProgressColor="@color/blue"
+                cpb:textColor="@color/blue"
+                cpb:textIsDisplayable="true"
+                cpb:circleWidth="@dimen/dp_5"
+                cpb:textSize="16sp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/liangboro"
+            android:layout_marginRight="@dimen/dp_5"></View>
+
+        <TextView
+            android:id="@+id/gq_churang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/liangboro"
+            android:text="出让股权比例：100.00%"
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/liangboro"
+            android:layout_marginRight="@dimen/dp_5"></View>
+
+        <TextView
+            android:id="@+id/gq_guzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/liangboro"
+            android:text="项目估值：2324221万"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/liangboro"
+            android:layout_marginRight="@dimen/dp_5"></View>
+
+        <TextView
+            android:id="@+id/gq_fenlei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/liangboro"
+            android:text="所属分类：金融"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sector="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/commontitle"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/stroke_white_soild"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/liangyellow">
+
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="项目介绍" />
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/project_introduce"
+                android:padding="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/stroke_white_soild"
+                android:paddingTop="@dimen/dp_10"
+                android:text="按时打算了哆啦A梦塑料袋" />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/touxiang" />
+
+                <com.lianhai.zhongchou.customview.SectorView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignBottom="@+id/imageView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    sector:Text="12"
+                    sector:TextSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/stroke_white_soild"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/liangyellow">
+
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="团队成员" />
+
+            </LinearLayout>
+            <WebView
+                android:visibility="gone"
+                android:id="@+id/project_member"
+                android:padding="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/stroke_white_soild"
+                android:paddingTop="@dimen/dp_10"
+                android:text="按时打算了哆啦A梦塑料袋" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/future"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/stroke_white_soild"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/liangyellow">
+
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="未来规划" />
+
+            </LinearLayout>
+
+            <WebView
+                android:visibility="gone"
+                android:id="@+id/project_future"
+                android:padding="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/stroke_white_soild"
+                android:paddingTop="@dimen/dp_10"
+                android:text="按时打算了哆啦A梦塑料袋" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/target"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/stroke_white_soild"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/liangyellow">
+
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="目标客户" />
+
+            </LinearLayout>
+
+            <WebView
+                android:visibility="gone"
+                android:id="@+id/project_target"
+                android:padding="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/stroke_white_soild"
+                android:paddingTop="@dimen/dp_10"
+                android:text="按时打算了哆啦A梦塑料袋" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/competition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/stroke_white_soild"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/liangyellow">
+
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="同行竞争" />
+
+            </LinearLayout>
+
+            <WebView
+                android:visibility="gone"
+                android:id="@+id/project_competition"
+                android:padding="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/stroke_white_soild"
+                android:paddingTop="@dimen/dp_10"
+                android:text="按时打算了哆啦A梦塑料袋" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/adavntage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/stroke_white_soild"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/liangyellow">
+
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="竞争优势" />
+
+            </LinearLayout>
+
+            <WebView
+                android:visibility="gone"
+                android:id="@+id/project_adavntage"
+                android:padding="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/stroke_white_soild"
+                android:paddingTop="@dimen/dp_10"
+                android:text="按时打算了哆啦A梦塑料袋" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/stroke_white_soild"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_10"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:background="@color/liangyellow">
+
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="盈利模式" />
+
+            </LinearLayout>
+
+            <WebView
+                android:visibility="gone"
+                android:id="@+id/Profit_model"
+                android:padding="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/stroke_white_soild"
+                android:paddingTop="@dimen/dp_10"
+                android:text="按时打算了哆啦A梦塑料袋" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

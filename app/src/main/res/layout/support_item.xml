@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/stroke_white_soild"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/liangyellow"
+            android:text="￥0.00"
+             />
+
+        <TextView
+            android:id="@+id/support_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0人支持"
+            android:textColor="@color/orange_red"
+             />
+
+        <TextView
+            android:id="@+id/limit_num"
+            android:layout_marginRight="@dimen/dp_80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（限购0人）"
+             />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        ></View>
+    <TextView
+        android:id="@+id/support_desc"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="项目成功后，在38位支持者中随机抽取一位赠送400g精装百花蜜一瓶
+包邮
+预计发放时间：项目成功结束后10天内"/>
+    <Button
+        android:id="@+id/support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" 支持￥：0.00"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/button_click_liangyellow"/>
+</LinearLayout>

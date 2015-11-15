@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background" >
+    <include layout="@layout/commontitle"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户余额" />
+
+        <TextView
+            android:id="@+id/Balance"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightboro"
+            android:text="0.00元" />
+
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/withdraw"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/click_view_no_corners_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额转出（提现）" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/go" />
+
+    </LinearLayout>
+     <LinearLayout
+         android:visibility="gone"
+         android:id="@+id/add_card"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/click_view_no_corners_white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:padding="@dimen/dp_10"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的银行卡" />
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/go" />
+
+    </LinearLayout>
+
+</LinearLayout>

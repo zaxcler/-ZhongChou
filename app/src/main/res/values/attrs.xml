@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircleProgressbar">
+        <attr name="circleColor" format="color"/>
+        <attr name="circleProgressColor" format="color"/>
+        <attr name="circleWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SectorView">
+        <attr name="TextColor" format="color"></attr>
+        <attr name="Text" format="string"></attr>
+        <attr name="TextSize" format="dimension"></attr>
+        <attr name="SectorColor" format="color"></attr>
+        <attr name="SectorAlpha" format="integer"></attr>
+        <attr name="SectorStartAngle" format="integer"></attr>
+        <attr name="SectorSweepAngle" format="integer"></attr>
+        <attr name="useCenter" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="SearchView">
+        <attr name="searchImgae" format="reference"></attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">鼎及众筹</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="prompt">请选择</string>
+
+    <string-array name="sheng">
+        <item> 北京</item>
+        <item> 上海</item>
+    </string-array>
+
+</resources>

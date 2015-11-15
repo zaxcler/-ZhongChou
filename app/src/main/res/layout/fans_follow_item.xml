@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/textview_click_white_boro"
+    android:orientation="horizontal">
+
+    <com.lianhai.zhongchou.customview.CircleImageView
+        android:id="@+id/touxiang"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:src="@drawable/touxiang" />
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名" />
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/look"
+        android:textColor="@color/white"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/corners_liangyellow_click"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="添加关注"/>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seacrch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_height"
+        android:background="@color/zhongchoutop"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_48"
+            android:layout_weight="1"
+            android:src="@drawable/top" />
+
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="right|center"
+            android:src="@drawable/sousuo" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipleReflashLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.lianhai.zhongchou.customview.SearchView
+                android:id="@+id/searchview"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                seacrch:searchImgae="@drawable/search">
+
+            </com.lianhai.zhongchou.customview.SearchView>
+
+
+            <LinearLayout
+                android:id="@+id/sort_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.lianhai.zhongchou.customview.MySpinner1
+                    android:id="@+id/sort1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="分类"
+                    android:textColor="@color/liangboro"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightboro"></View>
+
+                <com.lianhai.zhongchou.customview.MySpinner1
+                    android:id="@+id/sort2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="阶段"
+                    android:textColor="@color/liangboro"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightboro"></View>
+
+                <com.lianhai.zhongchou.customview.MySpinner1
+                    android:id="@+id/sort3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="排序"
+                    android:textColor="@color/liangboro"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <include
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/notice_view"
+                android:id="@+id/notice"></include>
+
+
+            <ListView
+
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/background"
+                android:dividerHeight="@dimen/dp_5"
+                android:padding="@dimen/dp_5">
+
+            </ListView>
+            <!--<com.lianhai.zhongchou.customview.MyListview1-->
+                <!--android:id="@+id/listView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:divider="@color/background"-->
+                <!--android:dividerHeight="@dimen/dp_5"-->
+                <!--android:padding="@dimen/dp_5">-->
+            <!--</com.lianhai.zhongchou.customview.MyListview1>-->
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

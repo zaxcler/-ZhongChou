@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lianhai.zhongchou" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:name="com.lianhai.zhongchou.config.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/launch"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登录页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.LoginActivity"></activity>
+        <!-- 忘记密码页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.ForgetPasswordActivity"></activity>
+        <!-- 修改密码页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.ChangePasswordActivity"></activity>
+        <!-- 注册页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.RegisterActivity"></activity>
+        <!-- 设置页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.UserInfomationActivity"></activity>
+        <!-- 地址列表页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.AddressListActivity"></activity>
+        <!-- 添加地址页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.AddressAddActivity"></activity>
+        <!-- 实名认证页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.VerifiedAcitvity"></activity>
+        <!-- 个人中心页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.MyProjectListActivity"></activity>
+        <!-- 粉丝和关注列表页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.FansOrFollowListActivity"></activity>
+        <!-- 用户个人页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.UserZoneActivity"></activity>
+        <!-- 钱包页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.WalletActivity"></activity>
+        <!-- 银行卡列表页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.CardListActivity"></activity>
+        <!-- 添加银行卡页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.CardAddActivity"></activity>
+        <!-- 提现页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.WithdrawActivity"></activity>
+        <!-- 现金流水页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.CashFollwActivity"></activity>
+        <!-- 关于我们页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.AboutActivvity"></activity>
+        <!-- 关于我们页面 -->
+        <activity android:name="com.lianhai.zhongchou.mypage.WebViewAcitity"></activity>
+
+
+
+
+        <!-- 项目详情页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.ProjectDetailActivity"></activity>
+        <!-- 项目详情页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.ProjectDetailIntroducationActivity"></activity>
+        <!-- 股权购买页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.SupportBuyGQActivity"></activity>
+        <!-- 公益消费购买页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.SupportBuyGYXFActivity"></activity>
+        <!-- 股权风险页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.AboutGQActivity"></activity>
+        <!-- 协议页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.ProtocolActivity"></activity>
+        <!-- 支付页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.PayActivity"></activity>
+        <!-- 投资人列表页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.SupportListActivity"></activity>
+        <!-- 连连绑定银行卡页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.BinderCardActivity"></activity>
+        <!-- 连连选择银行卡页面 -->
+        <activity android:name="com.lianhai.zhongchou.homepage.LianLianPayActivity"></activity>
+
+
+
+        <!--下面是连连支付用到的-->
+
+        <activity
+            android:name="com.yintong.secure.activity.BaseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+        <service
+            android:name="com.yintong.secure.service.PayService"
+            >
+        </service>
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+</manifest>

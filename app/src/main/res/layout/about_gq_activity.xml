@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+
+    <include layout="@layout/commontitle"></include>
+
+    <TextView
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="关于股权融资的风险您必须知道的:"
+         />
+
+    <CheckBox
+        android:layout_weight="0.1"
+        android:gravity="center_vertical"
+        android:id="@+id/checkbox1"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我已知晓股权融资是一种高风险投资，是一种没有固定收益和固定期限的投资，有产生本金亏损的可能性。"
+        />
+    <CheckBox
+        android:layout_weight="0.1"
+        android:id="@+id/checkbox2"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我承诺以上登记的所有信息属实，并对虚假信息产生的一切后果负责。我已阅读并同意签署"
+         />
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/protocol1"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《注册服务协议》"
+            android:textColor="@color/blue"
+            />
+        <TextView
+            android:id="@+id/protocol2"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《风险提示书》"
+            android:textColor="@color/blue"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_marginBottom="@dimen/dp_20"
+        android:id="@+id/confirm"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交认证"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_click_midyellow"/>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+    <include layout="@layout/commontitle"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_margin="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:background="@drawable/stroke_corners_liangyellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/corners_half_left_midyellow"
+            android:id="@+id/support"
+            android:layout_margin="1dp"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:text="投资" />
+
+        <TextView
+            android:id="@+id/collection"
+            android:layout_margin="@dimen/dp_1"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/midyellow"
+            android:text="收藏" />
+
+        <TextView
+            android:id="@+id/sponsor"
+            android:layout_margin="@dimen/dp_1"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/midyellow"
+            android:text="发起" />
+        </LinearLayout>
+        
+    </LinearLayout>
+    <!--<View -->
+        <!--android:id="@+id/scrollbar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/blue"/>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
